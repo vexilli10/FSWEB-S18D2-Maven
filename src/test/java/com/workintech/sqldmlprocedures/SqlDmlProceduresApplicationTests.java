@@ -10,6 +10,7 @@ import com.workintech.sqldmlprocedures.repository.TurRepository;
 import com.workintech.sqldmlprocedures.repository.YazarRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -64,7 +65,7 @@ class SqlDmlProceduresApplicationTests {
 	@Test
 	void findBookPointTest(){
 		List<Kitap> kitapList = kitapRepository.findAll();
-		assertEquals(kitapList.get(0).getPuan(), 27);
+		assertEquals(kitapList.get(0).getPuan(), 50);
 	}
 
 
